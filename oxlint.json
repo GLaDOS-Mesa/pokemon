@@ -1,0 +1,17 @@
+{
+  "files": ["src/**/*.ts", "src/**/*.vue"],
+  "rules": {
+    "no-unused-vars": "warn",
+    "no-console": "off"
+  },
+  "typescript": true,
+  "ignorePatterns": [
+    "node_modules/",
+    "dist/",
+    "build/",
+    "coverage/",
+    "src/**/*.d.ts",
+    "src/**/*.spec.ts",
+    "src/**/*.test.ts"
+  ]
+}
