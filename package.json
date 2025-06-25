@@ -7,10 +7,12 @@
     "preview": "vite preview",
     "lint": "eslint . --ext .ts,.vue",
     "lint:oxlint": "oxlint src",
+    "lint:compare": "node scripts/compare-output.mjs",
     "test": "vitest",
     "test:ui": "vitest --ui"
   },
   "dependencies": {
+    "chalk": "^5.4.1",
     "vue": "^3.4.0"
   },
   "devDependencies": {
