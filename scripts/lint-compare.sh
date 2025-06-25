@@ -7,7 +7,7 @@ echo "🔍 Running ESLint on .vue files..."
 npx eslint 'src/**/*.vue' > scripts/output/eslint_output.txt
 
 echo "⚡ Running Oxlint on .ts files..."
-npx oxlint 'src/**/*.ts' > scripts/output/oxlint_output.txt
+npx oxlint 'src' > scripts/output/oxlint_output.txt
 
 echo ""
 echo "📊 Comparison Summary:"
