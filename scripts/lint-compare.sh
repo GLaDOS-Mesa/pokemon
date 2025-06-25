@@ -4,16 +4,16 @@
 mkdir -p scripts/output
 
 echo "🔍 Running ESLint on .vue files..."
-npx eslint 'src/**/*.vue' > scripts/output/eslint_output.txt
+npx eslint . --ext .ts,.vue > scripts/output/eslint_output.txt
 
 echo "⚡ Running Oxlint on .ts files..."
-npx oxlint 'src' > scripts/output/oxlint_output.txt
+npx oxlint src --config oxlintrc.json > scripts/output/oxlint_output.txt
 
 echo ""
 echo "📊 Comparison Summary:"
 echo "----------------------"
-echo "ESLint found $(grep -c '^' scripts/output/eslint_output.txt) issues."
-echo "Oxlint found $(grep -c '^' scripts/output/oxlint_output.txt) issues."
+echo "ESLint Found $(tail -2 scripts/output/eslint_output.txt | head -1)"
+echo "Oxlint $(tail -2 scripts/output/oxlint_output.txt | head -1)"
 
 echo ""
 echo "✅ Outputs saved to:"

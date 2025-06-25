@@ -6,7 +6,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext .ts,.vue",
-    "lint:oxlint": "oxlint src",
+    "lint:oxlint": "oxlint src --config oxlintrc.json",
     "lint:compare": "node scripts/compare-output.mjs",
     "test": "vitest",
     "test:ui": "vitest --ui"

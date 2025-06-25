@@ -1,0 +1,10 @@
+{
+  "files": ["src/**/*.ts"],
+  "rules": {
+    "no-unused-vars": "error",
+    "no-console": "warn"
+  },
+  "plugins": [
+    "typescript"
+  ]
+}
